@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link
+			rel="stylesheet"
+			href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css"
+		/>
+		<link rel="stylesheet" href="style.css" />
+		<title>Cuaca Hari Ini</title>
+	</head>
+	<body>
+		<nav class="navbar-1">
+			<div class="nav-container">
+				<div class="nav-item-left"><h1>CUACA HARI INI</h1></div>
+				<div class="nav-main-item">
+					<div class="nav-search">
+						<input
+							class="input-keyword"
+							type="text"
+							placeholder="Masukkan Nama Kota"
+							size="25"
+							id="input-keyword"
+						/>
+						<button
+							class="search-btn"
+							onclick="fetchData()"
+							type="button"
+							id="button"
+						>
+							<img
+								id="search-img"
+								src="assets/icon/find.png"
+								alt=""
+							/>
+						</button>
+					</div>
+				</div>
+				<!-- <div class="nav-item-right">enam</div> -->
+			</div>
+		</nav>
+		<main>
+			<div class="container-back">
+				<!-- <h1>sdbfaigbi</h1> -->
+				<div class="main-container">
+					<div class="container main-item">
+						<div class="item first-item">
+							<div class="header-loct">
+								<h4 id="location"></h4>
+							</div>
+							<div class="main-element">
+								<div class="element-loct">
+									<p>
+										<span
+											id="current_temp"
+											style="
+												font-size: 60px;
+												font-weight: 500;
+											"
+										>
+										</span
+										>terasa seperti
+										<span
+											id="feels_temp"
+											style="font-size: 25px"
+										>
+										</span>
+									</p>
+									<p2
+										>Terakhir diperbaharui pada
+										<span id="last_update"></span
+									></p2>
+								</div>
+								<div class="icon-element">
+									<img id="icon-weather" src="" alt="" />
+									<p id="icon-title"></p>
+								</div>
+							</div>
+						</div>
+						<div class="item second-item">
+							<div class="astro item">
+								<div class="header-astro">
+									<h3">
+										Prakiraan Hari Ini
+									</h3>
+								</div>
+								<div class="astro row">
+									<div class="column sunrise">
+										<div class="Title sunrise">
+											<h6>Matahari Terbit</h6>
+										</div>
+										<div class="Icon Spagi">
+											<img
+												src="assets/icon/sunrise.png"
+												alt="sunrise"
+											/>
+										</div>
+										<div class="Timebox">
+											<p class="Time SunriseTime"></p>
+										</div>
+									</div>
+									<div class="column sunset">
+										<div class="Title sunset">
+											<h6>Matahari Terbenam</h6>
+										</div>
+										<div class="Icon ISunset">
+											<img
+												src="assets/icon/sunsets.png"
+												alt="sunset"
+											/>
+										</div>
+										<div class="Timebox">
+											<p class="Time SunsetTime"></p>
+										</div>
+									</div>
+									<div class="column moonrise">
+										<div class="Title moonrise">
+											<h6>Bulan Terbit</h6>
+										</div>
+										<div class="Icon Imoonrise">
+											<img
+												src="assets/icon/moonrise.png"
+												alt="moonrise"
+											/>
+										</div>
+										<div class="Timebox">
+											<p class="Time MoonriseTime"></p>
+										</div>
+									</div>
+									<div class="column moonset">
+										<div class="Title moonset">
+											<h6>Bulan Terbenam</h6>
+										</div>
+										<div class="Icon Imoonset">
+											<img
+												src="assets/icon/moonset.png"
+												alt="moonset"
+											/>
+										</div>
+										<div class="Timebox">
+											<p class="Time MoonsetTime"></p>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="item third-item"><h1>Three</h1></div>
+					</div>
+					<div class="container side-item">
+						<div class="item first-side">
+							<h1>Side one</h1>
+						</div>
+						<div class="item second-side">
+							<h1>side Two</h1>
+						</div>
+					</div>
+				</div>
+			</div>
+		</main>
+		<footer class="footerWrap">
+			<p>
+				<a
+					href="https://www.flaticon.com/free-icons/find"
+					title="find icons"
+					>Find icons created by Freepik - Flaticon</a
+				>
+				- Powered by
+				<a href="https://www.weatherapi.com/" title="Free Weather API"
+					>WeatherAPI.com</a
+				>
+			</p>
+			<p>Develop with &hearts; by Samuel Yusa</p>
+		</footer>
+		<script src="script.js"></script>
+	</body>
+</html>
