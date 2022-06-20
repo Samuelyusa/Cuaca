@@ -41,8 +41,10 @@ async function fetchData() {
     
     console.log(inputKeyword.value);
     const respon = await
-        fetch("http://api.weatherapi.com/v1/forecast.json?key=5e3bbd9fbe134591aa695336221706&q="
-            + `${inputKey}` + "&days=1&aqi=no&alerts=no")
+        // fetch("http://api.weatherapi.com/v1/forecast.json?key=5e3bbd9fbe134591aa695336221706&q="
+            // + `${inputKey}` + "&days=1&aqi=no&alerts=no")
+        fetch("https://api.weatherapi.com/v1/forecast.json?key=5e3bbd9fbe134591aa695336221706&q="
+        + `${inputKey}` +"&days=1&aqi=no&alerts=no")
             .then(respon => respon.json())
             .then(respon => {
                 let location = document.querySelector('#location');
